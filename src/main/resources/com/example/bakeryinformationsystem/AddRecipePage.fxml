@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bakeryinformationsystem.Controllers.AddRecipeController">
+   <children>
+      <ImageView fitHeight="700.0" fitWidth="1000.0">
+         <image>
+            <Image url="@addRecipeBackGround.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="returnHomeButton" layoutX="21.0" layoutY="641.0" mnemonicParsing="false" onAction="#returnToHomePage" prefHeight="33.0" prefWidth="75.0" text="Back" />
+      <ListView id="addrecipeLV" fx:id="viewOfRecipeIngredients" layoutX="119.0" layoutY="145.0" opacity="0.65" prefHeight="530.0" prefWidth="401.0" stylesheets="@stylesheet.css" />
+      <ListView id="addrecipeLV" fx:id="viewOfRecipes" layoutX="536.0" layoutY="145.0" onMouseClicked="#chooseRecipe" opacity="0.65" prefHeight="484.0" prefWidth="401.0" stylesheets="@stylesheet.css" />
+      <AnchorPane id="recipeButtonBarBackdrop" prefHeight="59.0" prefWidth="1000.0" stylesheets="@stylesheet.css">
+         <children>
+            <ButtonBar layoutX="78.0" layoutY="4.0" prefHeight="51.0" prefWidth="842.0">
+              <buttons>
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Select Ingredient: ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <ChoiceBox fx:id="ingredientDropDown" prefHeight="25.0" prefWidth="66.0" />
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Name: ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="nameInput" prefHeight="25.0" prefWidth="66.0" />
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Origin: ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="originInput" prefHeight="25.0" prefWidth="66.0" />
+                  <Text fill="WHITE" fontSmoothingType="LCD" strokeType="OUTSIDE" strokeWidth="0.0" text="Quantity: ">
+                     <font>
+                        <Font name="System Bold" size="12.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="quantityInput" minWidth="45.0" prefHeight="22.0" prefWidth="66.0" />
+                  <Button fx:id="addRecipeButton" mnemonicParsing="false" onAction="#addIngredientToRecipe" prefHeight="27.0" prefWidth="125.0" text="Add Ingredient" />
+              </buttons>
+            </ButtonBar>
+         </children></AnchorPane>
+      <Button layoutX="613.0" layoutY="639.0" mnemonicParsing="false" onAction="#addRecipeToList" prefHeight="38.0" prefWidth="86.0" text="New Recipe" />
+      <Label fx:id="recipeName" contentDisplay="CENTER" layoutX="234.0" layoutY="105.0" prefHeight="33.0" prefWidth="190.0" text="Recipe Name">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Label>
+      <Label contentDisplay="CENTER" layoutX="699.0" layoutY="105.0" prefHeight="33.0" prefWidth="119.0" text="Recipes">
+         <font>
+            <Font name="Arial Bold" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="732.0" layoutY="639.0" mnemonicParsing="false" onAction="#deleteRecipe" prefHeight="38.0" prefWidth="86.0" text="delete recipe" />
+   </children>
+</Pane>

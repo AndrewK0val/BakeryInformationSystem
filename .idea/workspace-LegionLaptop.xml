@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6c8d6e9d-f11a-4795-bd18-9ce49b414d45" name="Changes" comment="a">
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bakeryinformationsystem/Controllers/AddIngredientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bakeryinformationsystem/Controllers/AddIngredientsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bakeryinformationsystem/Controllers/SearchIngredientsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bakeryinformationsystem/Controllers/SearchIngredientsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bakeryinformationsystem/Controllers/SearchRecipeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bakeryinformationsystem/Controllers/SearchRecipeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/bakeryinformationsystem/Models/Recipe.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/bakeryinformationsystem/Models/Recipe.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">
+    <option name="selectedUrlAndAccountId">
+      <UrlAndAccount>
+        <option name="accountId" value="01f3461d-6293-4298-af2d-cb9726c9d622" />
+        <option name="url" value="https://github.com/ShaneWhitmore/BakeryInformationSystem.git" />
+      </UrlAndAccount>
+    </option>
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2HlrdPCIS8jxhRk3etkjhluFGP0" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/andre/OneDrive - South East Technological University (Waterford Campus)/Data Structures/github/CA1&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.3449862&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.customizations&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="Push.Settings">
+    <force-push-targets>
+      <force-push-target remote-path="origin" branch="main" />
+    </force-push-targets>
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\andre\OneDrive - South East Technological University (Waterford Campus)\Data Structures\github\BakeryInformationSystem\lib" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.bakeryinformationsystem.Models" />
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="MainPageApplication" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.bakeryinformationsystem.MainPageApplication" />
+      <module name="BakeryInformationSystem" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.bakeryinformationsystem.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.MainPageApplication" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6c8d6e9d-f11a-4795-bd18-9ce49b414d45" name="Changes" comment="" />
+      <created>1668870597994</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1668870597994</updated>
+      <workItem from="1668870599170" duration="1780000" />
+      <workItem from="1668872394738" duration="2171000" />
+      <workItem from="1669041827454" duration="1611000" />
+      <workItem from="1669044801598" duration="1341000" />
+      <workItem from="1669115662414" duration="1769000" />
+      <workItem from="1669149385078" duration="1435000" />
+      <workItem from="1669194924540" duration="3710000" />
+      <workItem from="1669212688269" duration="519000" />
+      <workItem from="1669296062929" duration="699000" />
+      <workItem from="1669373847223" duration="1195000" />
+      <workItem from="1669576803729" duration="2155000" />
+      <workItem from="1669712578915" duration="880000" />
+      <workItem from="1670251082909" duration="53000" />
+      <workItem from="1670251205853" duration="194000" />
+      <workItem from="1670251502637" duration="1193000" />
+      <workItem from="1670333359129" duration="1322000" />
+      <workItem from="1671297148381" duration="3338000" />
+      <workItem from="1671304393787" duration="7201000" />
+      <workItem from="1671391194924" duration="4474000" />
+      <workItem from="1671457026073" duration="7119000" />
+      <workItem from="1671545119952" duration="5139000" />
+      <workItem from="1671709185495" duration="68000" />
+      <workItem from="1671709350922" duration="557000" />
+      <workItem from="1671825863675" duration="3142000" />
+      <workItem from="1672062814686" duration="46000" />
+      <workItem from="1672425562505" duration="7276000" />
+      <workItem from="1672668384701" duration="49000" />
+    </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1668871996281</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1668871996281</updated>
+    </task>
+    <task id="LOCAL-00002" summary="test">
+      <created>1668872700144</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1668872700144</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test">
+      <created>1668872850161</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1668872850161</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Added Donal's code (LinkList, LinkedNode, BakedGoods and Ingredients)">
+      <created>1669042786987</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1669042786987</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Updated GUI and UX by removing tab view and placing navigation buttons on main page. Increased application window size from 400x600 to 700x1000">
+      <created>1671460105311</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671460105311</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added save and load methods -not yet tested">
+      <created>1671494713064</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671494713064</updated>
+    </task>
+    <task id="LOCAL-00007" summary="a">
+      <created>1671548739926</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671548739926</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="origin/main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <MESSAGE value="Added Donal's code (LinkList, LinkedNode, BakedGoods and Ingredients)" />
+    <MESSAGE value="Updated GUI and UX by removing tab view and placing navigation buttons on main page. Increased application window size from 400x600 to 700x1000" />
+    <MESSAGE value="Added save and load methods -not yet tested" />
+    <MESSAGE value="a" />
+    <option name="LAST_COMMIT_MESSAGE" value="a" />
+  </component>
+</project>

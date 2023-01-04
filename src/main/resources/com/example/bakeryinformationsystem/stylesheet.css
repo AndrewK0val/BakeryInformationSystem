@@ -1,0 +1,43 @@
+
+#BakedGoodsLV, #viewOfIngredients, #bakeVIewLV, #MainPageButtonContainer, #searchRecipeLV, #addrecipeLV, #bakeAnItemLV {
+    -fx-background-color: rgba(255, 255, 255, 0.57);
+    -fx-background-radius:12px;
+    -fx-border-radius:9px;
+    -fx-border-color: #ffffff;
+    -fx-border-width: 4px;
+    -fx-alignment: center;
+    -fx-effect: dropshadow(three-pass-box, rgba(0, 0, 0, 0.71), 40, 0.0, 0, 0);
+
+}
+
+#searchingredientButtonBar
+{
+    -fx-background-color: white;
+    -fx-padding: 10px;
+    -fx-background-radius: 12px;
+    -fx-border-width: 2px;
+    -fx-border-color: #a7a7a7;
+    -fx-border-radius: 10px;
+}
+
+#backButton{
+    -fx-border-color: rgb(120, 17, 17);
+    -fx-border-width: 1px;
+    -fx-background-radius: 7px;
+    -fx-border-radius: 7px;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-background-insets: 0, 0 0 0 2;
+    /*-fx-background-color: linear-gradient(#ff0000, #881200);*/
+
+    -fx-background-color: linear-gradient(rgba(255, 196, 196, 0.89) 1%, rgb(92, 0, 0) 30%, #ff0000 100%);
+}
+
+
+
+#recipeButtonBarBackdrop, #bakeAnItemButtonBarBackdrop{
+
+    -fx-background-color: linear-gradient(rgba(132, 132, 132, 0.89) 1%, rgb(67, 67, 67) 30%, #777777 100%);
+
+
+}
