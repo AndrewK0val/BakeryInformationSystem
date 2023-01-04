@@ -55,22 +55,22 @@ public class AddRecipeController implements Initializable
     private Recipe chosenRecipe;
 
 
-
     // for 1st ingredient, run a while loop to find all ingredients and add to dropdown
-
-//    public void ingredients
 
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle)
     {
-//        ingredientDropDown.getItems().addAll(String.valueOf(allIngredients));
+//      ingredientDropDown.getItems().addAll(String.valueOf(allIngredients));
         ingredientDropDown(allIngredients);
         viewOfRecipes();
+        viewOfRecipeIngredients();
     }
+
     public void addIngredientToRecipe()
     {
-
+        // This method takes the recipe you choose from the recipes listview and adds ingredients to the recipeIngredients linked list
+        // of that chosen recipe
         if(chosenRecipe!=null)
         {
             String name = ingredientDropDown.getSelectionModel().getSelectedItem().getName();
@@ -78,29 +78,22 @@ public class AddRecipeController implements Initializable
             String texture = ingredientDropDown.getSelectionModel().getSelectedItem().getTexture();
             Ingredients ing = new Ingredients( name, calories, texture);
             chosenRecipe.recipeIngredients.addElement(ing);
-            chosenRecipe.recipeIngredients.addToListView(viewOfRecipeIngredients);
+
             System.out.println(ingredientDropDown.getSelectionModel().getSelectedItem().getName());
         }
-
-
     }
 
     public void addRecipeToList() {
+        String name = nameInput.getText();
+        String quantityAsString = quantityInput.getText();
+        int quantityAsInt = Integer.valueOf(quantityAsString);
+        float totalCalories = 0;
 
-
-    String name = nameInput.getText();
-    String quantityAsString = quantityInput.getText();
-    int quantityAsInt = Integer.valueOf(quantityAsString);
-    float totalCalories = 0;
-
-    Recipe recipe = new Recipe(name,quantityAsInt, recipeIngredients, totalCalories);
-    //frontend adding of goods
-
-    recipeLinkedList.addElement(recipe);
-    recipeLinkedList.addToListView(viewOfRecipes);
-//    viewOfRecipes(recipe);
-   // viewOfRecipes.getItems().add(recipe.toString());
-    System.out.println(nameInput.getText() + "\n" + quantityInput.getText() + "\n" + originInput.getText());
+        Recipe recipe = new Recipe(name,quantityAsInt, recipeIngredients, totalCalories);
+        //frontend adding of goods
+        recipeLinkedList.addElement(recipe);
+        recipeLinkedList.addToListView(viewOfRecipes);
+        System.out.println(nameInput.getText() + "\n" + quantityInput.getText() + "\n" + originInput.getText());
 }
 
 
@@ -124,7 +117,6 @@ public class AddRecipeController implements Initializable
     public void ingredientDropDown(LinkedList<Ingredients> allIngredients)
     {
         ingredientDropDown.getItems().clear();
-
         for(int i = 0 ; i < allIngredients.listLength() ; i ++)
         {
             ingredientDropDown.getItems().add(allIngredients.get(i));
@@ -140,10 +132,11 @@ public class AddRecipeController implements Initializable
         recipeLinkedList.resetList();
     }
 
-    public int numberOfRecipes() {
-        int x = recipeLinkedList.listLength();
-        return x;
+        public int numberOfRecipes() {
+            int x = recipeLinkedList.listLength();
+            return x;
     }
+
     public void deleteRecipe() {
         for (int i = 0; i < recipeLinkedList.listLength(); i++) {
             if (recipeLinkedList.isEmpty()) { // stops nullPointerException
@@ -151,7 +144,18 @@ public class AddRecipeController implements Initializable
 
                     recipeLinkedList.deleteElement(i);
                     viewOfRecipes.getItems().remove(i);
+                }
+            }
+        }
+    }
 
+    public void deleteRecipeIngredient() {
+        for (int i = 0; i < recipeIngredients.listLength(); i++) {
+            if (recipeIngredients.isEmpty()) { // stops nullPointerException
+                if (viewOfRecipeIngredients.getSelectionModel().getSelectedIndex() == i) {
+
+                    recipeIngredients.deleteElement(i);
+                    viewOfRecipeIngredients.getItems().remove(i);
                 }
             }
         }
@@ -165,6 +169,16 @@ public class AddRecipeController implements Initializable
         for(int i = 0 ; i < recipeLinkedList.listLength(); i++)
         {
             viewOfRecipes.getItems().add(recipeLinkedList.get(i));
+        }
+    }
+
+    public void viewOfRecipeIngredients()
+    {
+        viewOfRecipeIngredients.getItems().clear();
+
+        for(int i = 0 ; i < recipeIngredients.listLength(); i++)
+        {
+            viewOfRecipeIngredients.getItems().add(recipeIngredients.get(i));
         }
     }
 //    public void viewOfIngredients() //updates the listview with the linked list
@@ -181,6 +195,7 @@ public class AddRecipeController implements Initializable
     public void chooseRecipe(){ // when you click on a recipe in the  recipes listview, it takes the name of that recipe and sets the text of the recipe ingredients label to that name
     chosenRecipe = viewOfRecipes.getSelectionModel().getSelectedItem();
     recipeName.setText(chosenRecipe.getName());
+    chosenRecipe.recipeIngredients.addToListView(viewOfRecipeIngredients);
     }
 
 

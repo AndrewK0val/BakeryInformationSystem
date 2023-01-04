@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bakeryinformationsystem.Controllers.AddRecipeController">
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.bakeryinformationsystem.Controllers.AddRecipeController">
    <children>
       <ImageView fitHeight="700.0" fitWidth="1000.0">
          <image>
@@ -21,7 +21,7 @@
          </image>
       </ImageView>
       <Button fx:id="returnHomeButton" layoutX="21.0" layoutY="641.0" mnemonicParsing="false" onAction="#returnToHomePage" prefHeight="33.0" prefWidth="75.0" text="Back" />
-      <ListView id="addrecipeLV" fx:id="viewOfRecipeIngredients" layoutX="119.0" layoutY="145.0" opacity="0.65" prefHeight="530.0" prefWidth="401.0" stylesheets="@stylesheet.css" />
+      <ListView id="addrecipeLV" fx:id="viewOfRecipeIngredients" layoutX="119.0" layoutY="145.0" opacity="0.65" prefHeight="484.0" prefWidth="393.0" stylesheets="@stylesheet.css" />
       <ListView id="addrecipeLV" fx:id="viewOfRecipes" layoutX="536.0" layoutY="145.0" onMouseClicked="#chooseRecipe" opacity="0.65" prefHeight="484.0" prefWidth="401.0" stylesheets="@stylesheet.css" />
       <AnchorPane id="recipeButtonBarBackdrop" prefHeight="59.0" prefWidth="1000.0" stylesheets="@stylesheet.css">
          <children>
@@ -56,7 +56,7 @@
             </ButtonBar>
          </children></AnchorPane>
       <Button layoutX="613.0" layoutY="639.0" mnemonicParsing="false" onAction="#addRecipeToList" prefHeight="38.0" prefWidth="86.0" text="New Recipe" />
-      <Label fx:id="recipeName" contentDisplay="CENTER" layoutX="234.0" layoutY="105.0" prefHeight="33.0" prefWidth="190.0" text="Recipe Name">
+      <Label fx:id="recipeName" alignment="CENTER" contentDisplay="CENTER" layoutX="234.0" layoutY="105.0" prefHeight="33.0" prefWidth="190.0" text="Recipe Name">
          <font>
             <Font name="Arial Bold" size="27.0" />
          </font>
@@ -67,5 +67,6 @@
          </font>
       </Label>
       <Button layoutX="732.0" layoutY="639.0" mnemonicParsing="false" onAction="#deleteRecipe" prefHeight="38.0" prefWidth="86.0" text="delete recipe" />
+      <Button layoutX="270.0" layoutY="639.0" mnemonicParsing="false" onAction="#deleteRecipeIngredient" prefHeight="38.0" prefWidth="119.0" text="Delete Ingredient" />
    </children>
 </Pane>

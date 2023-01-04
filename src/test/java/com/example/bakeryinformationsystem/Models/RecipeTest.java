@@ -1,6 +1,8 @@
 package com.example.bakeryinformationsystem.Models;
 
 import com.example.bakeryinformationsystem.ADT.LinkedList;
+import com.example.bakeryinformationsystem.Models.Ingredients;
+import com.example.bakeryinformationsystem.Models.Recipe;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -15,7 +17,7 @@ class RecipeTest {
 
     @BeforeEach
     void setUp() {
-        risValid = new Recipe("Donal",23,allIngredients,recipeIngredients);
+        risValid = new Recipe("Donal",23,recipeIngredients,30F);
         rInvalidData = new Recipe(null,0,null,null);
     }
 
@@ -39,7 +41,7 @@ class RecipeTest {
 
     @Test
     void testToString() {
-        Recipe recipe = new Recipe("Donal",23,allIngredients,recipeIngredients);
+        Recipe recipe = new Recipe("Donal",23,recipeIngredients,30F);
         String stringContents = recipe.toString();
 
         assertTrue(stringContents.contains( "Recipe { " + "name = " + recipe.getName()));
